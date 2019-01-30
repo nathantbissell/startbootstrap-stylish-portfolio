@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Stylish Portfolio v5.0.1 (https://startbootstrap.com/template-overviews/stylish-portfolio)
- * Copyright 2013-2018 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
@@ -19,6 +19,7 @@ body {
 }
 
 .content-section {
+  background: #fff;
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
 }
@@ -86,6 +87,7 @@ h6 {
 }
 
 .masthead {
+  color: #FFF;
   min-height: 30rem;
   position: relative;
   display: table;
@@ -93,8 +95,8 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/header.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/header.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,7 +207,8 @@ h6 {
 }
 
 .service-icon {
-  background-color: #fff;
+  background-color: #e6e6fa;
+  margin: 20px;
   color: #1D809F;
   height: 7rem;
   width: 7rem;
@@ -218,8 +221,8 @@ h6 {
 
 .callout {
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-callout.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/winter.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/winter.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,7 +257,7 @@ h6 {
 }
 
 .portfolio-item .caption .caption-content {
-  color: #fff;
+  color: transparent;
   margin: auto 2rem 2rem;
 }
 
@@ -299,6 +302,9 @@ h6 {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+  .portfolio-item:hover .caption-content {
+    color: #FFF;
+  }
 }
 
 footer.footer {
@@ -333,8 +339,8 @@ a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #f05f40 !important;
+  border-color: #f05f40 !important;
   color: #fff !important;
 }
 
@@ -365,7 +371,7 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #f05f40 !important;
 }
 
 .text-primary {
