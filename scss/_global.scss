@@ -96,10 +96,10 @@ h6 {
   margin: 20px;
 }
 
-.unordered {
-  list-style-type: none;
-  width: 500px;
-}
+// .unordered {
+//   list-style-type: none;
+//   width: 500px;
+// }
 
 // .headline {
 //   font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
@@ -117,9 +117,4 @@ h6 {
 .bullet {
   padding: 10px;
   overflow: auto;
-}
-
-.bullet:hover {
-  background: #eee;
-  cursor: pointer;
 }
