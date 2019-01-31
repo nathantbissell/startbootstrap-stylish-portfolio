@@ -88,3 +88,38 @@ h6 {
     font-weight: 800;
   }
 }
+
+
+// * {margin: 0; padding: 0;}
+
+.myList {
+  margin: 20px;
+}
+
+.unordered {
+  list-style-type: none;
+  width: 500px;
+}
+
+// .headline {
+//   font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+// }
+
+.bullet img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+// .bullet p {
+//   font: 200 12px/1.5 Georgia, Times New Roman, serif;
+// }
+
+.bullet {
+  padding: 10px;
+  overflow: auto;
+}
+
+.bullet:hover {
+  background: #eee;
+  cursor: pointer;
+}

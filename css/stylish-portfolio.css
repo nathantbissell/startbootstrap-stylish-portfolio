@@ -86,6 +86,30 @@ h6 {
   font-weight: 800;
 }
 
+.myList {
+  margin: 20px;
+}
+
+.unordered {
+  list-style-type: none;
+  width: 500px;
+}
+
+.bullet img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.bullet {
+  padding: 10px;
+  overflow: auto;
+}
+
+.bullet:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
 .masthead {
   color: #FFF;
   min-height: 30rem;
