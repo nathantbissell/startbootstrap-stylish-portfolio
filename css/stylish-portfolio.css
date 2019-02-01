@@ -249,6 +249,26 @@ h6 {
   max-width: 30rem;
 }
 
+.social-link {
+  margin: 40px;
+  text-align: center;
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #1D809F;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
+}
+
 .portfolio-item {
   display: block;
   position: relative;
