@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://fiddle.jshell.net/_display/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title></title>
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script type="text/javascript" src="./dummy.js.download"></script>
+
+    <link rel="stylesheet" type="text/css" href="./result-light.css">
+
+
+  <style id="compiled-css" type="text/css">
+      body {
+  background-color: #EDEBEB;
+  color: #000;
+  font-family: "Arial Black"
+}
+
+button {
+  background-color: #7561ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+h4 {
+  color: #000;
+}
+
+label {
+  color: #000;
+}
+
+.container {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.form {
+  width: 200px;
+  margin: 10px;
+}
+
+#username, #password {
+  width: 100%;
+  padding: 8px;
+  display: inline-block;
+}
+
+#btn-submit {
+  width: 50%;
+}
+  </style>
+
+
+  <!-- TODO: Missing CoffeeScript 2 -->
+
+  <script type="text/javascript">
+
+
+    window.onload=function(){
+      
+const signIn = event => {
+event.preventDefault()
+const username = document.getElementById("username").value
+const password = document.getElementById("password").value
+console.log('getting to characters');
+if (username.length === 0 || password.length === 0) {
+console.log('no characters');
+alert('Please enter a username or password')}
+else {serverRequest(username, password)}
+}
+
+serverRequest= (user, pw) => {
+	return $.ajax({
+    url: 'www.bufferunderrun.com/Auth/Logon',
+    method: 'POST',
+    dataType: 'json',
+    data: '{"username": "' + username + '", "password" : "' + password + '"}'
+})
+}
+
+    }
+
+</script>
+
+</head>
+<body>
+    
+
+    
+      <title>BufferUnderrun</title>
+     
+     
+     
+       <div class="container">
+       <h4>
+       Welcome to BufferUnderrun!
+       </h4>
+       <div class="form">
+         <label for="username">Username</label>
+         <input type="text" id="username" placeholder="Enter email">
+         <label for="password">Password</label>
+         <input type="password" id="password" placeholder="Password">
+         <button type="submit" id="btn-submit" onclick="signIn()">Login</button>
+         </div>
+       </div>
+     
+
+
+  
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: ""
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body></html>
